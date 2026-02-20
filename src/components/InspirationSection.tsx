@@ -19,7 +19,7 @@ const InspirationSection = () => {
     <section className="py-20 bg-background">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl font-display italic font-bold text-primary mb-4">
             Inspiración
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -30,7 +30,7 @@ const InspirationSection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {inspirations.map((item) => (
-            <div key={item.label} className="group relative aspect-square rounded-lg overflow-hidden cursor-pointer">
+            <div key={item.label} className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
               <img
                 src={item.img}
                 alt={item.label}

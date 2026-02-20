@@ -23,10 +23,10 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-20 bg-secondary">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl font-display italic font-bold text-primary mb-4">
             Testimonios
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t) => (
-            <div key={t.name} className="bg-card rounded-lg p-6 shadow-sm">
+            <div key={t.name} className="bg-card rounded-xl p-6 shadow-sm border border-border">
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: t.rating }).map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-gold text-gold" />
