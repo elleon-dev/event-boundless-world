@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Star, MapPin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
@@ -21,7 +22,7 @@ const ResultCard = ({ item }: { item: ResultItem }) => {
     : 0;
 
   return (
-    <div className="group bg-card rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+    <Link to={`/detalle/${item.id}`} className="block group bg-card rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
       <div className="relative aspect-[4/3] overflow-hidden">
         <img
           src={item.image}
@@ -73,7 +74,7 @@ const ResultCard = ({ item }: { item: ResultItem }) => {
           )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
